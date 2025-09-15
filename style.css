@@ -1,59 +1,84 @@
-/* style.css - The "Before" state */
-body {
-  background-color: #f3f4f6; /* A light gray */
-  font-family: sans-serif;
-  color: #1f2937; /* Dark gray for text */
+/* style.css - The "After" state */
+
+/* This is our central control panel for the entire design! */
+:root {
+    --primary-color: #3B82F6;
+    --text-on-primary: #FFFFFF;
+
+    --background-light: #F3F4F6;
+    --surface-light: #FFFFFF;
+    --surface-dark: #E5E7EB;
+
+    --text-dark: #1F2937;
+    --border-color: #E5E7EB;
+
+    --border-radius-default: 8px;
+    --spacing-medium: 1rem;
 }
+
+body {
+    background-color: var(--background-light);
+    font-family: sans-serif;
+    color: var(--text-dark);
+}
+
 .chat-container {
     max-width: 600px;
     margin: 50px auto;
-    border: 1px solid #E5E7EB; /* Another gray */
-    border-radius: 8px;
-    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-default);
+    background-color: var(--surface-light);
 }
+
 header {
-    background-color: #3B82F6; /* Primary blue */
-    color: #FFFFFF; /* White */
-    padding: 1rem;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    padding: var(--spacing-medium);
+    border-top-left-radius: var(--border-radius-default);
+    border-top-right-radius: var(--border-radius-default);
 }
+
 .message {
     padding: 0.75rem;
-    margin: 0.5rem 1rem;
-    border-radius: 8px;
+    margin: 0.5rem var(--spacing-medium);
+    border-radius: var(--border-radius-default);
     max-width: 80%;
 }
+
 .user-message {
-    background-color: #3B82F6; /* Primary blue again! */
-    color: #FFFFFF; /* White again! */
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
     margin-left: auto;
 }
+
 .ai-message {
-    background-color: #E5E7EB; /* Gray again! */
-    color: #1F2937; /* Dark gray again! */
+    background-color: var(--surface-dark);
+    color: var(--text-dark);
 }
-/* A little extra for layout */
+
 .chat-messages {
     display: flex;
     flex-direction: column;
 }
+
 footer {
-    padding: 1rem;
+    padding: var(--spacing-medium);
     display: flex;
 }
+
 input {
     flex-grow: 1;
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--border-color);
     padding: 0.5rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius-default);
 }
+
 button {
-    background-color: #3B82F6; /* Primary blue a third time! */
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius-default);
     margin-left: 0.5rem;
     cursor: pointer;
 }
