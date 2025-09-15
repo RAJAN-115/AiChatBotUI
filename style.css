@@ -1,0 +1,59 @@
+/* style.css - The "Before" state */
+body {
+  background-color: #f3f4f6; /* A light gray */
+  font-family: sans-serif;
+  color: #1f2937; /* Dark gray for text */
+}
+.chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #E5E7EB; /* Another gray */
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+header {
+    background-color: #3B82F6; /* Primary blue */
+    color: #FFFFFF; /* White */
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.message {
+    padding: 0.75rem;
+    margin: 0.5rem 1rem;
+    border-radius: 8px;
+    max-width: 80%;
+}
+.user-message {
+    background-color: #3B82F6; /* Primary blue again! */
+    color: #FFFFFF; /* White again! */
+    margin-left: auto;
+}
+.ai-message {
+    background-color: #E5E7EB; /* Gray again! */
+    color: #1F2937; /* Dark gray again! */
+}
+/* A little extra for layout */
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    padding: 1rem;
+    display: flex;
+}
+input {
+    flex-grow: 1;
+    border: 1px solid #E5E7EB;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+button {
+    background-color: #3B82F6; /* Primary blue a third time! */
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
